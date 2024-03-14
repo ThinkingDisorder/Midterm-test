@@ -1,91 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>SQUARE PROBLEM</title>
-    <style>
-        /* External CSS */
-        .container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 20px;
-        }
-
-        .square-table {
-            color: white;
-            background-color: blue;
-            border: solid black 7px;
-            border-radius: 25px;
-            width: 100%;
-        }
-
-        .square-header {
-            color: white;
-            background-color: black;
-            border: solid black 2px;
-            outline: solid black 2px;
-        }
-
-        .square-input {
-            background-color: #DEDEE6;
-            border: 4px solid red;
-            width: calc(100% - 10px); 
-        }
-
-        .readonly-input {
-            background-color: #DEDEE6;
-            border: 4px solid yellow;
-            width: calc(100% - 10px);
-        }
-
-        .square-button {
-            color: white;
-            background-color: black;
-            border: 1px solid white;
-            margin: 5px;
-            padding: 5px 10px;
-        }
-
-        /* Added CSS to target Area and Both buttons */
-        .square-button[value="Area"],
-        .square-button[value="Both"] {
-            outline-color: red;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
+    <head><title>RECTANGLE PROBLEM</title>
+    </head>
+    <body>
         <form>
-            <table class="square-table">
-                <tr>
-                    <th colspan="2" class="square-header">SQUARE PROBLEM</th>
-                </tr>
-                <tr>
-                    <td><label>Enter side:</label></td>
-                    <td><input type="text" class="square-input"/></td> 
-                </tr>
-                <tr>
-                    <td><label>Area:</label></td>
-                    <td><input type="text" readonly class="readonly-input"/></td>
-                </tr>
-                <tr>
-                    <td><label>Perimeter:</label></td>
-                    <td><input type="text" readonly class="readonly-input"/></td>
-                </tr>
+            <table style="background-color:orange;border:solid black 7px;border-radius:25px;">
+                <tr><th colspan="2" style="color:white;background-color:black;border:solid black 2px;outline:solid black 2px;">RECTANGLE PROBLEM</th></tr>
+                <tr> <td><label>Length:</label></td><td><input type="text" style="background-color:#DEDEE6;border:4px solid black;"/> </td> </tr>
+                <tr> <td><label>Width:</label></td><td><input type="text" style="background-color:#DEDEE6;border:4px solid black;"/> </td> </tr>
+                <tr> <td><label>Area:</label></td><td><input id="area" type="text" readonly style="background-color:#DEDEE6;border:4px solid black;"/> </td> </tr>
+                <tr> <td><label>Perimeter:</label></td><td><input type="text" readonly style="background-color:#DEDEE6;border:4px solid black;"/> </td> </tr>
                 <tr>
                     <td colspan="2" >
-                        <center>
-                            <input type="button" value="Area" class="square-button"/>
-                            <input type="button" value="Perimeter" class="square-button"/>
-                            <input type="button" value="Both" class="square-button"/>
-                            <input type="button" value="Clear" class="square-button"/>
-                        </center>
-                    </td>
+                <center>
+                    <input type="button" value="Area" style="color:white;background-color:black;border:1px solid white;" />
+                    <input type="button" value="Perimeter" style="color:white;background-color:black;border:1px solid white;" />
+                    <input type="button" value="Both" style="color:white;background-color:black;border:1px solid white;" />
+                    <input type="reset" value="Clear" style="color:white;background-color:black;border:1px solid white;" />
+                </center>
+                </td>
                 </tr>
-            </table> 
+            </table>
         </form>
-    </div>
-</body>
+    </body>
 </html>
-
-
