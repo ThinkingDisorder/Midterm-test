@@ -28,8 +28,8 @@
 
         .square-input {
             background-color: #DEDEE6;
-            border: 4px solid #DEDEE6;
-            width: calc(100% - 10px);
+            border: 4px solid red;
+            width: calc(100% - 10px); 
         }
 
         .readonly-input {
@@ -46,9 +46,10 @@
             padding: 5px 10px;
         }
 
-        /* Red outline for Area box and Both button */
-        .red-outline {
-            border-color: red;
+        /* Added CSS to target Area and Both buttons */
+        .square-button[value="Area"],
+        .square-button[value="Both"] {
+            outline-color: red;
         }
     </style>
 </head>
@@ -65,7 +66,7 @@
                 </tr>
                 <tr>
                     <td><label>Area:</label></td>
-                    <td><input type="text" readonly class="readonly-input red-outline"/></td>
+                    <td><input type="text" readonly class="readonly-input"/></td>
                 </tr>
                 <tr>
                     <td><label>Perimeter:</label></td>
@@ -74,9 +75,9 @@
                 <tr>
                     <td colspan="2" >
                         <center>
-                            <input type="button" value="Area" class="square-button red-outline"/>
+                            <input type="button" value="Area" class="square-button"/>
                             <input type="button" value="Perimeter" class="square-button"/>
-                            <input type="button" value="Both" class="square-button red-outline"/>
+                            <input type="button" value="Both" class="square-button"/>
                             <input type="button" value="Clear" class="square-button"/>
                         </center>
                     </td>
