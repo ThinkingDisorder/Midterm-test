@@ -3,7 +3,6 @@
 <head>
     <title>SQUARE PROBLEM</title>
     <style>
-        /* External CSS */
         .container {
             position: absolute;
             top: 0;
@@ -45,6 +44,11 @@
             margin: 5px;
             padding: 5px 10px;
         }
+
+        /* Red outline for Area box and Both button */
+        .red-outline {
+            border-color: red;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +64,7 @@
                 </tr>
                 <tr>
                     <td><label>Area:</label></td>
-                    <td><input type="text" readonly class="readonly-input"/></td>
+                    <td><input type="text" readonly class="readonly-input red-outline"/></td>
                 </tr>
                 <tr>
                     <td><label>Perimeter:</label></td>
@@ -69,9 +73,9 @@
                 <tr>
                     <td colspan="2" >
                         <center>
-                            <input type="button" value="Area" class="square-button"/>
+                            <input type="button" value="Area" class="square-button red-outline"/>
                             <input type="button" value="Perimeter" class="square-button"/>
-                            <input type="button" value="Both" class="square-button"/>
+                            <input type="button" value="Both" class="square-button red-outline"/>
                             <input type="button" value="Clear" class="square-button"/>
                         </center>
                     </td>
@@ -81,4 +85,5 @@
     </div>
 </body>
 </html>
+
 
