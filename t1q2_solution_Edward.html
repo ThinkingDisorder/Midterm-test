@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FIXED PROBLEM</title>
+    <title>FIXED PROBLEM2</title>
     <meta name="author" content="Neldan Edward">
     <meta name="description" content="A solution to problem with HTML and CSS.">
     <meta name="keywords" content="HTML, CSS, problem, solutions, coding">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 300px;
+            margin: 20px;
+        }
+
         .rectangle-table {
             background-color: orange;
             border: solid black 7px;
@@ -36,24 +46,26 @@
     </style>
 </head>
 <body>
-    <form>
-        <table class="rectangle-table">
-            <tr><th colspan="2" class="rectangle-header">RECTANGLE PROBLEM</th></tr>
-            <tr> <td><label>Length:</label></td><td><input type="text" class="rectangle-input"/> </td> </tr>
-            <tr> <td><label>Width:</label></td><td><input type="text" class="rectangle-input"/> </td> </tr>
-            <tr> <td><label>Area:</label></td><td><input id="area" type="text" readonly class="rectangle-input"/> </td> </tr>
-            <tr> <td><label>Perimeter:</label></td><td><input type="text" readonly class="rectangle-input"/> </td> </tr>
-            <tr>
-                <td colspan="2" >
-                    <center>
-                        <input type="button" value="Area" class="rectangle-button" />
-                        <input type="button" value="Perimeter" class="rectangle-button" />
-                        <input type="button" value="Both" class="rectangle-button" />
-                        <input type="reset" value="Clear" class="rectangle-button" />
-                    </center>
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <form>
+            <table class="rectangle-table">
+                <tr><th colspan="2" class="rectangle-header">RECTANGLE PROBLEM</th></tr>
+                <tr> <td><label>Length:</label></td><td><input type="text" class="rectangle-input"/> </td> </tr>
+                <tr> <td><label>Width:</label></td><td><input type="text" class="rectangle-input"/> </td> </tr>
+                <tr> <td><label>Area:</label></td><td><input id="area" type="text" readonly class="rectangle-input"/> </td> </tr>
+                <tr> <td><label>Perimeter:</label></td><td><input type="text" readonly class="rectangle-input"/> </td> </tr>
+                <tr>
+                    <td colspan="2" >
+                        <center>
+                            <input type="button" value="Area" class="rectangle-button" />
+                            <input type="button" value="Perimeter" class="rectangle-button" />
+                            <input type="button" value="Both" class="rectangle-button" />
+                            <input type="reset" value="Clear" class="rectangle-button" />
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
